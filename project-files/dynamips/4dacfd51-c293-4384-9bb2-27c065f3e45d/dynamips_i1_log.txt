@@ -1,0 +1,52 @@
+Apr 16 00:50:02.688 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 16 00:50:02.690 HYPERVISOR: Started on IP = localhost, TCP port = 53188.
+Apr 16 00:50:02.872 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 16 00:50:02.873 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips 
+Apr 16 00:50:02.941 GENERAL: working_dir=C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips
+Apr 16 00:50:02.942 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\4dacfd51-c293-4384-9bb2-27c065f3e45d 
+Apr 16 00:50:02.943 GENERAL: working_dir=C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\4dacfd51-c293-4384-9bb2-27c065f3e45d
+Apr 16 00:50:02.943 HYPERVISOR: exec_cmd: vm create P1 1 c7200 
+Apr 16 00:50:02.949 VM: VM P1 created.
+Apr 16 00:50:02.951 HYPERVISOR: exec_cmd: vm set_con_tcp_port P1 5000 
+Apr 16 00:50:02.953 HYPERVISOR: exec_cmd: c7200 get_mac_addr P1 
+Apr 16 00:50:02.954 HYPERVISOR: exec_cmd: vm get_status P1 
+Apr 16 00:50:02.955 HYPERVISOR: exec_cmd: vm slot_add_binding P1 0 0 C7200-IO-FE 
+Apr 16 00:50:02.957 HYPERVISOR: exec_cmd: vm set_disk0 P1 0 
+Apr 16 00:50:02.959 HYPERVISOR: exec_cmd: vm set_exec_area P1 64 
+Apr 16 00:50:02.960 HYPERVISOR: exec_cmd: vm get_status P1 
+Apr 16 00:50:02.960 HYPERVISOR: exec_cmd: vm set_idle_pc P1 0x608927c0 
+Apr 16 00:50:02.962 HYPERVISOR: exec_cmd: vm set_ios P1 C:/Users/Maeva/Music/c7200-a3jk9s-mz.124-25g/c7200-a3jk9s-mz.124-25g.bin 
+Apr 16 00:50:02.963 HYPERVISOR: exec_cmd: c7200 set_mac_addr P1 ca01.3aa8.0000 
+Apr 16 00:50:02.987 HYPERVISOR: exec_cmd: vm set_nvram P1 512 
+Apr 16 00:50:02.988 HYPERVISOR: exec_cmd: vm set_ram P1 512 
+Apr 16 00:50:02.989 HYPERVISOR: exec_cmd: vm get_status P1 
+Apr 16 00:50:02.990 HYPERVISOR: exec_cmd: vm slot_add_binding P1 1 0 PA-FE-TX 
+Apr 16 00:50:02.990 HYPERVISOR: exec_cmd: vm get_status P1 
+Apr 16 00:50:02.991 HYPERVISOR: exec_cmd: vm slot_add_binding P1 2 0 PA-8T 
+Apr 16 00:50:02.992 HYPERVISOR: exec_cmd: vm get_status P1 
+Apr 16 00:50:02.992 HYPERVISOR: exec_cmd: vm slot_add_binding P1 3 0 PA-4E 
+Apr 16 00:50:09.009 HYPERVISOR: exec_cmd: nio create_udp udp-afbcbfd4-5d72-474a-a211-93395943a6be 10008 127.0.0.1 10009 
+Apr 16 00:50:09.261 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P1 1 0 udp-afbcbfd4-5d72-474a-a211-93395943a6be 
+Apr 16 00:50:09.263 HYPERVISOR: exec_cmd: vm get_status P1 
+Apr 16 00:50:11.472 HYPERVISOR: exec_cmd: nio create_udp udp-a9244e62-60fe-4596-8a5d-5165d70a789f 10026 127.0.0.1 10027 
+Apr 16 00:50:11.476 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P1 0 0 udp-a9244e62-60fe-4596-8a5d-5165d70a789f 
+Apr 16 00:50:11.477 HYPERVISOR: exec_cmd: vm get_status P1 
+Apr 16 00:52:27.180 HYPERVISOR: exec_cmd: vm set_ghost_status P1 2 
+Apr 16 00:52:27.191 HYPERVISOR: exec_cmd: vm set_ghost_file P1 C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c7200-a3jk9s-mz.124-25g.bin-512.ghost 
+Apr 16 00:52:27.192 HYPERVISOR: exec_cmd: vm get_status P1 
+Apr 16 00:52:27.204 HYPERVISOR: exec_cmd: vm set_config P1 configs\i1_startup-config.cfg 
+Apr 16 00:52:27.206 HYPERVISOR: exec_cmd: vm start P1 
+Apr 16 00:52:57.652 HYPERVISOR: exec_cmd: vm extract_config P1 
+Apr 16 00:53:27.652 HYPERVISOR: exec_cmd: vm extract_config P1 
+Apr 16 00:53:38.019 HYPERVISOR: exec_cmd: vm get_status P1 
+Apr 16 00:53:38.022 HYPERVISOR: exec_cmd: vm stop P1 
+Apr 16 00:53:38.495 VM: VM P1 shutdown.
+Apr 16 00:53:38.496 HYPERVISOR: exec_cmd: vm extract_config P1 
+Apr 17 08:25:56.661 HYPERVISOR: exec_cmd: vm set_ghost_status P1 2 
+Apr 17 08:25:56.666 HYPERVISOR: exec_cmd: vm set_ghost_file P1 C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c7200-a3jk9s-mz.124-25g.bin-512.ghost 
+Apr 17 08:25:56.667 HYPERVISOR: exec_cmd: vm get_status P1 
+Apr 17 08:25:56.681 HYPERVISOR: exec_cmd: vm set_config P1 configs\i1_startup-config.cfg 
+Apr 17 08:25:56.682 HYPERVISOR: exec_cmd: vm start P1 
+Apr 17 08:26:27.193 HYPERVISOR: exec_cmd: vm extract_config P1 
+Apr 17 08:26:57.257 HYPERVISOR: exec_cmd: vm extract_config P1 
+Apr 17 08:27:27.235 HYPERVISOR: exec_cmd: vm extract_config P1 

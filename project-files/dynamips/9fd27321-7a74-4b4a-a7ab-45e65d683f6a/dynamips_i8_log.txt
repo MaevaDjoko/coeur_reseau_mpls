@@ -1,0 +1,56 @@
+Apr 16 00:50:07.262 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 16 00:50:07.265 HYPERVISOR: Started on IP = localhost, TCP port = 53239.
+Apr 16 00:50:07.717 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 16 00:50:07.719 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips 
+Apr 16 00:50:07.720 GENERAL: working_dir=C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips
+Apr 16 00:50:07.721 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\8c6723f1-8350-499e-91ba-fc34f663dd7b 
+Apr 16 00:50:07.723 GENERAL: working_dir=C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\8c6723f1-8350-499e-91ba-fc34f663dd7b
+Apr 16 00:50:07.724 HYPERVISOR: exec_cmd: vm create PE2 6 c3725 
+Apr 16 00:50:07.730 VM: VM PE2 created.
+Apr 16 00:50:07.732 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE2 5006 
+Apr 16 00:50:07.734 HYPERVISOR: exec_cmd: c3725 get_mac_addr PE2 
+Apr 16 00:50:07.735 HYPERVISOR: exec_cmd: vm set_disk0 PE2 0 
+Apr 16 00:50:07.738 HYPERVISOR: exec_cmd: vm set_exec_area PE2 64 
+Apr 16 00:50:07.741 HYPERVISOR: exec_cmd: vm set_ios PE2 C:/Users/Maeva/Music/c3725-adventerprisek9-mz.124-25d/c3725-adventerprisek9-mz.124-25d.bin 
+Apr 16 00:50:07.744 HYPERVISOR: exec_cmd: c3725 set_mac_addr PE2 c206.2d20.0000 
+Apr 16 00:50:07.745 HYPERVISOR: exec_cmd: vm set_nvram PE2 256 
+Apr 16 00:50:07.747 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 16 00:50:07.748 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 1 0 NM-1FE-TX 
+Apr 16 00:50:07.751 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 16 00:50:07.752 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 2 0 NM-4T 
+Apr 16 00:50:07.753 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 16 00:50:07.754 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 0 16 WIC-1T 
+Apr 16 00:50:07.756 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 16 00:50:07.757 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 0 32 WIC-2T 
+Apr 16 00:50:11.737 HYPERVISOR: exec_cmd: nio create_udp udp-49093279-9d02-4f7b-9d73-0bfc70a8785d 10038 127.0.0.1 10039 
+Apr 16 00:50:11.996 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 0 0 udp-49093279-9d02-4f7b-9d73-0bfc70a8785d 
+Apr 16 00:50:11.998 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 16 00:50:12.158 HYPERVISOR: exec_cmd: nio create_udp udp-99fb40c9-174d-41b0-a977-84ff70e59896 10044 127.0.0.1 10045 
+Apr 16 00:50:12.163 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 0 1 udp-99fb40c9-174d-41b0-a977-84ff70e59896 
+Apr 16 00:50:12.164 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 16 00:50:12.264 HYPERVISOR: exec_cmd: nio create_udp udp-6374f8d4-5a0d-40a3-9eaf-a88630aca138 10048 127.0.0.1 10049 
+Apr 16 00:50:12.268 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 1 0 udp-6374f8d4-5a0d-40a3-9eaf-a88630aca138 
+Apr 16 00:50:12.269 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 16 00:52:38.630 HYPERVISOR: exec_cmd: vm set_ghost_status PE2 2 
+Apr 16 00:52:38.632 HYPERVISOR: exec_cmd: vm set_ghost_file PE2 C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.bin-128.ghost 
+Apr 16 00:52:38.632 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 16 00:52:38.643 HYPERVISOR: exec_cmd: vm set_config PE2 configs\i6_startup-config.cfg 
+Apr 16 00:52:38.643 HYPERVISOR: exec_cmd: vm start PE2 
+Apr 16 00:53:39.107 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 16 00:53:39.110 HYPERVISOR: exec_cmd: vm stop PE2 
+Apr 16 00:53:39.266 VM: VM PE2 shutdown.
+Apr 16 00:53:39.268 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Apr 17 08:25:57.529 HYPERVISOR: exec_cmd: vm set_ghost_status PE2 2 
+Apr 17 08:25:57.530 HYPERVISOR: exec_cmd: vm set_ghost_file PE2 C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.bin-128.ghost 
+Apr 17 08:25:57.531 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 17 08:25:57.541 HYPERVISOR: exec_cmd: vm set_config PE2 configs\i6_startup-config.cfg 
+Apr 17 08:25:57.541 HYPERVISOR: exec_cmd: vm start PE2 
+Apr 17 17:57:57.427 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 17 17:57:57.428 HYPERVISOR: exec_cmd: vm stop PE2 
+Apr 17 17:57:58.192 VM: VM PE2 shutdown.
+Apr 17 17:57:58.225 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Apr 17 17:58:01.715 HYPERVISOR: exec_cmd: vm set_ghost_status PE2 2 
+Apr 17 17:58:01.716 HYPERVISOR: exec_cmd: vm set_ghost_file PE2 C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.bin-128.ghost 
+Apr 17 17:58:01.717 HYPERVISOR: exec_cmd: vm get_status PE2 
+Apr 17 17:58:01.898 HYPERVISOR: exec_cmd: vm set_config PE2 configs\i6_startup-config.cfg 
+Apr 17 17:58:01.898 HYPERVISOR: exec_cmd: vm start PE2 

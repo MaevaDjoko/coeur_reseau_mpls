@@ -1,0 +1,81 @@
+Apr 16 00:50:05.202 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 16 00:50:05.205 HYPERVISOR: Started on IP = localhost, TCP port = 53225.
+Apr 16 00:50:05.624 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 16 00:50:05.626 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips 
+Apr 16 00:50:05.626 GENERAL: working_dir=C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips
+Apr 16 00:50:05.627 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\bff0b91f-cdcf-4ab5-b133-72cd3374ea76 
+Apr 16 00:50:05.629 GENERAL: working_dir=C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\bff0b91f-cdcf-4ab5-b133-72cd3374ea76
+Apr 16 00:50:05.630 HYPERVISOR: exec_cmd: vm create CE1 7 c7200 
+Apr 16 00:50:05.637 VM: VM CE1 created.
+Apr 16 00:50:05.639 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE1 5007 
+Apr 16 00:50:05.640 HYPERVISOR: exec_cmd: c7200 get_mac_addr CE1 
+Apr 16 00:50:05.640 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 16 00:50:05.641 HYPERVISOR: exec_cmd: vm slot_add_binding CE1 0 0 C7200-IO-FE 
+Apr 16 00:50:05.644 HYPERVISOR: exec_cmd: vm set_disk0 CE1 0 
+Apr 16 00:50:05.646 HYPERVISOR: exec_cmd: vm set_exec_area CE1 64 
+Apr 16 00:50:05.648 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 16 00:50:05.648 HYPERVISOR: exec_cmd: vm set_idle_pc CE1 0x608927c0 
+Apr 16 00:50:05.652 HYPERVISOR: exec_cmd: vm set_ios CE1 C:/Users/Maeva/Music/c7200-a3jk9s-mz.124-25g/c7200-a3jk9s-mz.124-25g.bin 
+Apr 16 00:50:05.654 HYPERVISOR: exec_cmd: c7200 set_mac_addr CE1 ca07.338c.0000 
+Apr 16 00:50:05.656 HYPERVISOR: exec_cmd: vm set_nvram CE1 512 
+Apr 16 00:50:05.658 HYPERVISOR: exec_cmd: vm set_ram CE1 512 
+Apr 16 00:50:05.659 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 16 00:50:05.661 HYPERVISOR: exec_cmd: vm slot_add_binding CE1 1 0 PA-FE-TX 
+Apr 16 00:50:05.662 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 16 00:50:05.663 HYPERVISOR: exec_cmd: vm slot_add_binding CE1 2 0 PA-8T 
+Apr 16 00:50:05.665 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 16 00:50:05.667 HYPERVISOR: exec_cmd: vm slot_add_binding CE1 3 0 PA-4E 
+Apr 16 00:50:10.740 HYPERVISOR: exec_cmd: nio create_udp udp-39cbcb4a-54d5-4093-946d-b9d9395f2071 10018 127.0.0.1 10019 
+Apr 16 00:50:10.990 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE1 1 0 udp-39cbcb4a-54d5-4093-946d-b9d9395f2071 
+Apr 16 00:50:10.991 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 16 00:51:15.277 HYPERVISOR: exec_cmd: nio create_udp udp-3eec4145-3576-432d-ab5d-f7528cf836f5 10013 127.0.0.1 10014 
+Apr 16 00:51:15.282 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE1 0 0 udp-3eec4145-3576-432d-ab5d-f7528cf836f5 
+Apr 16 00:51:15.283 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 16 00:52:27.641 HYPERVISOR: exec_cmd: vm set_ghost_status CE1 2 
+Apr 16 00:52:27.642 HYPERVISOR: exec_cmd: vm set_ghost_file CE1 C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c7200-a3jk9s-mz.124-25g.bin-512.ghost 
+Apr 16 00:52:27.643 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 16 00:52:27.653 HYPERVISOR: exec_cmd: vm set_config CE1 configs\i7_startup-config.cfg 
+Apr 16 00:52:27.654 HYPERVISOR: exec_cmd: vm start CE1 
+Apr 16 00:52:58.287 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 16 00:53:28.379 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 16 00:53:38.587 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 16 00:53:38.588 HYPERVISOR: exec_cmd: vm stop CE1 
+Apr 16 00:53:39.081 VM: VM CE1 shutdown.
+Apr 16 00:53:39.083 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 17 08:25:57.071 HYPERVISOR: exec_cmd: vm set_ghost_status CE1 2 
+Apr 17 08:25:57.084 HYPERVISOR: exec_cmd: vm set_ghost_file CE1 C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c7200-a3jk9s-mz.124-25g.bin-512.ghost 
+Apr 17 08:25:57.087 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 17 08:25:57.099 HYPERVISOR: exec_cmd: vm set_config CE1 configs\i7_startup-config.cfg 
+Apr 17 08:25:57.100 HYPERVISOR: exec_cmd: vm start CE1 
+Apr 17 08:26:27.520 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 17 08:26:57.519 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 17 08:27:27.525 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 17 09:12:58.346 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 17 13:20:06.451 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 17 13:20:06.452 HYPERVISOR: exec_cmd: vm stop CE1 
+Apr 17 13:20:24.591 VM: VM CE1 shutdown.
+Apr 17 13:20:24.629 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 17 13:20:25.494 HYPERVISOR: exec_cmd: vm set_ghost_status CE1 2 
+Apr 17 13:20:25.495 HYPERVISOR: exec_cmd: vm set_ghost_file CE1 C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c7200-a3jk9s-mz.124-25g.bin-512.ghost 
+Apr 17 13:20:25.496 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 17 13:20:25.582 HYPERVISOR: exec_cmd: vm set_config CE1 configs\i7_startup-config.cfg 
+Apr 17 13:20:25.582 HYPERVISOR: exec_cmd: vm start CE1 
+Apr 17 13:20:56.270 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 17 13:21:26.250 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 17 14:05:52.909 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 17 14:05:52.910 HYPERVISOR: exec_cmd: vm slot_disable_nio CE1 1 0 
+Apr 17 14:05:52.920 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding CE1 1 0 
+Apr 17 14:05:52.975 HYPERVISOR: exec_cmd: nio delete udp-39cbcb4a-54d5-4093-946d-b9d9395f2071 
+Apr 17 14:05:53.714 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 17 14:05:53.715 HYPERVISOR: exec_cmd: vm slot_disable_nio CE1 0 0 
+Apr 17 14:05:53.717 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding CE1 0 0 
+Apr 17 14:05:53.768 HYPERVISOR: exec_cmd: nio delete udp-3eec4145-3576-432d-ab5d-f7528cf836f5 
+Apr 17 14:05:54.355 HYPERVISOR: exec_cmd: vm get_status CE1 
+Apr 17 14:05:54.356 HYPERVISOR: exec_cmd: vm stop CE1 
+Apr 17 14:05:54.650 VM: VM CE1 shutdown.
+Apr 17 14:05:54.650 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Apr 17 14:05:54.704 HYPERVISOR: exec_cmd: vm delete CE1 
+Apr 17 14:05:54.704 VM: VM CE1 destroyed.
+Apr 17 14:05:54.844 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 17 14:05:55.066 HYPERVISOR: Stopped.
+Apr 17 14:05:55.093 GENERAL: reset done.

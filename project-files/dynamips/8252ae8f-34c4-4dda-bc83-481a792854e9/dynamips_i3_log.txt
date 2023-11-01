@@ -1,0 +1,68 @@
+Apr 16 00:50:03.873 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 16 00:50:03.875 HYPERVISOR: Started on IP = localhost, TCP port = 53197.
+Apr 16 00:50:04.303 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 16 00:50:04.305 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips 
+Apr 16 00:50:04.306 GENERAL: working_dir=C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips
+Apr 16 00:50:04.306 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\8252ae8f-34c4-4dda-bc83-481a792854e9 
+Apr 16 00:50:04.308 GENERAL: working_dir=C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\8252ae8f-34c4-4dda-bc83-481a792854e9
+Apr 16 00:50:04.309 HYPERVISOR: exec_cmd: vm create P3 3 c7200 
+Apr 16 00:50:04.316 VM: VM P3 created.
+Apr 16 00:50:04.318 HYPERVISOR: exec_cmd: vm set_con_tcp_port P3 5002 
+Apr 16 00:50:04.318 HYPERVISOR: exec_cmd: c7200 get_mac_addr P3 
+Apr 16 00:50:04.319 HYPERVISOR: exec_cmd: vm get_status P3 
+Apr 16 00:50:04.320 HYPERVISOR: exec_cmd: vm slot_add_binding P3 0 0 C7200-IO-FE 
+Apr 16 00:50:04.322 HYPERVISOR: exec_cmd: vm set_disk0 P3 0 
+Apr 16 00:50:04.323 HYPERVISOR: exec_cmd: vm set_exec_area P3 64 
+Apr 16 00:50:04.324 HYPERVISOR: exec_cmd: vm get_status P3 
+Apr 16 00:50:04.325 HYPERVISOR: exec_cmd: vm set_idle_pc P3 0x608927c0 
+Apr 16 00:50:04.327 HYPERVISOR: exec_cmd: vm set_ios P3 C:/Users/Maeva/Music/c7200-a3jk9s-mz.124-25g/c7200-a3jk9s-mz.124-25g.bin 
+Apr 16 00:50:04.329 HYPERVISOR: exec_cmd: c7200 set_mac_addr P3 ca03.0820.0000 
+Apr 16 00:50:04.330 HYPERVISOR: exec_cmd: vm set_nvram P3 512 
+Apr 16 00:50:04.331 HYPERVISOR: exec_cmd: vm set_ram P3 512 
+Apr 16 00:50:04.333 HYPERVISOR: exec_cmd: vm get_status P3 
+Apr 16 00:50:04.334 HYPERVISOR: exec_cmd: vm slot_add_binding P3 1 0 PA-FE-TX 
+Apr 16 00:50:04.336 HYPERVISOR: exec_cmd: vm get_status P3 
+Apr 16 00:50:04.337 HYPERVISOR: exec_cmd: vm slot_add_binding P3 2 0 PA-8T 
+Apr 16 00:50:04.339 HYPERVISOR: exec_cmd: vm get_status P3 
+Apr 16 00:50:04.339 HYPERVISOR: exec_cmd: vm slot_add_binding P3 3 0 PA-4E 
+Apr 16 00:50:08.049 HYPERVISOR: exec_cmd: nio create_udp udp-021b4e94-20f9-45a0-971b-3eae3e0856f6 10002 127.0.0.1 10003 
+Apr 16 00:50:08.461 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P3 1 0 udp-021b4e94-20f9-45a0-971b-3eae3e0856f6 
+Apr 16 00:50:08.462 HYPERVISOR: exec_cmd: vm get_status P3 
+Apr 16 00:50:11.608 HYPERVISOR: exec_cmd: nio create_udp udp-dce3e672-2309-401f-bd33-b6eb5ac3abbd 10032 127.0.0.1 10033 
+Apr 16 00:50:11.612 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P3 0 0 udp-dce3e672-2309-401f-bd33-b6eb5ac3abbd 
+Apr 16 00:50:11.613 HYPERVISOR: exec_cmd: vm get_status P3 
+Apr 16 00:52:26.136 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Apr 16 00:52:26.146 VM: VM Ghost created.
+Apr 16 00:52:26.149 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Maeva/Music/c7200-a3jk9s-mz.124-25g/c7200-a3jk9s-mz.124-25g.bin 
+Apr 16 00:52:26.150 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 16 00:52:26.153 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c7200-a3jk9s-mz.124-25g.bin-512.ghost 
+Apr 16 00:52:26.155 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Apr 16 00:52:26.158 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 16 00:52:26.212 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Apr 16 00:52:26.213 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 16 00:52:26.937 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 16 00:52:26.943 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 16 00:52:27.140 VM: VM Ghost shutdown.
+Apr 16 00:52:27.142 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Apr 16 00:52:27.146 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 16 00:52:27.146 VM: VM Ghost destroyed.
+Apr 16 00:52:27.177 HYPERVISOR: exec_cmd: vm set_ghost_status P3 2 
+Apr 16 00:52:27.178 HYPERVISOR: exec_cmd: vm set_ghost_file P3 C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c7200-a3jk9s-mz.124-25g.bin-512.ghost 
+Apr 16 00:52:27.179 HYPERVISOR: exec_cmd: vm get_status P3 
+Apr 16 00:52:27.190 HYPERVISOR: exec_cmd: vm set_config P3 configs\i3_startup-config.cfg 
+Apr 16 00:52:27.192 HYPERVISOR: exec_cmd: vm start P3 
+Apr 16 00:52:57.597 HYPERVISOR: exec_cmd: vm extract_config P3 
+Apr 16 00:53:27.650 HYPERVISOR: exec_cmd: vm extract_config P3 
+Apr 16 00:53:38.019 HYPERVISOR: exec_cmd: vm get_status P3 
+Apr 16 00:53:38.020 HYPERVISOR: exec_cmd: vm stop P3 
+Apr 16 00:53:38.601 VM: VM P3 shutdown.
+Apr 16 00:53:38.602 HYPERVISOR: exec_cmd: vm extract_config P3 
+Apr 17 08:25:56.685 HYPERVISOR: exec_cmd: vm set_ghost_status P3 2 
+Apr 17 08:25:56.699 HYPERVISOR: exec_cmd: vm set_ghost_file P3 C:\Users\Maeva\GNS3\projects\basic\project-files\dynamips\c7200-a3jk9s-mz.124-25g.bin-512.ghost 
+Apr 17 08:25:56.701 HYPERVISOR: exec_cmd: vm get_status P3 
+Apr 17 08:25:56.720 HYPERVISOR: exec_cmd: vm set_config P3 configs\i3_startup-config.cfg 
+Apr 17 08:25:56.721 HYPERVISOR: exec_cmd: vm start P3 
+Apr 17 08:26:27.192 HYPERVISOR: exec_cmd: vm extract_config P3 
+Apr 17 08:26:57.257 HYPERVISOR: exec_cmd: vm extract_config P3 
+Apr 17 08:27:27.225 HYPERVISOR: exec_cmd: vm extract_config P3 
+Apr 17 21:43:34.656 HYPERVISOR: exec_cmd: vm extract_config P3 
